@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" name="Failed suite [FFSuite0]" parallel="classes">
+  <parameter name="EmailPassword" value="woaiwojia1314"/>
+  <parameter name="CardNumber" value="2800054779666"/>
+  <parameter name="Email" value="382790915@qq.com"/>
+  <parameter name="LastName2" value="TANG"/>
+  <parameter name="FirstName2" value="ZIQI"/>
+  <parameter name="LastName1" value="TANG"/>
+  <parameter name="FirstName1" value="ZIQI"/>
+  <parameter name="Password" value="1314"/>
+  <parameter name="PhoneField3" value="962"/>
+  <parameter name="PhoneField2" value="3795"/>
+  <parameter name="PhoneField1" value="022"/>
+  <test name="advc(failed)" parallel="classes">
+    <parameter name="CardNumber" value="2800054779666"/>
+    <parameter name="EmailPassword" value="woaiwojia1314"/>
+    <parameter name="Email" value="382790915@qq.com"/>
+    <parameter name="FirstName2" value="ZIQI"/>
+    <parameter name="LastName2" value="TANG"/>
+    <parameter name="Password" value="1314"/>
+    <parameter name="FirstName1" value="ZIQI"/>
+    <parameter name="LastName1" value="TANG"/>
+    <parameter name="PhoneField3" value="962"/>
+    <parameter name="PhoneField2" value="3795"/>
+    <parameter name="PhoneField1" value="022"/>
+    <classes>
+      <class name="com.osl.automation.testcase.osl.CopyOfEmailTracker2">
+        <methods>
+          <include name="case1"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.osl.automation.testcase.osl.CopyOfEmailTracker2 -->
+      <class name="com.osl.automation.testcase.osl.CopyOfEmailTracker1">
+        <methods>
+          <include name="setUp"/>
+          <include name="case1"/>
+        </methods>
+      </class> <!-- com.osl.automation.testcase.osl.CopyOfEmailTracker1 -->
+      <class name="com.osl.automation.testcase.osl.ADVC_URL1">
+        <methods>
+          <include name="setUp"/>
+          <include name="case1"/>
+        </methods>
+      </class> <!-- com.osl.automation.testcase.osl.ADVC_URL1 -->
+      <class name="com.osl.automation.testcase.osl.ADVC_URL2">
+        <methods>
+          <include name="setUp"/>
+          <include name="case1"/>
+        </methods>
+      </class> <!-- com.osl.automation.testcase.osl.ADVC_URL2 -->
+    </classes>
+  </test> <!-- advc(failed) -->
+</suite> <!-- Failed suite [FFSuite0] -->
